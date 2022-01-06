@@ -34,7 +34,7 @@ LIGHTSQUID_LISTEN_PORT=80
 
 ## Some advices
 
-The best way to use ramdisk for all processed files. E.g. of fstab:
+The best way to use [ramdisk](https://en.wikipedia.org/wiki/Tmpfs) for all processed files. E.g. of fstab:
 
 ```
 tmpfs   $PROJ_PATH/dump   tmpfs   rw,size=500M    0       0
