@@ -12,7 +12,7 @@ With this tool you will get statistics, which sites and when watch users of your
 
 Clone this project, complete [.env](.env) with your values, then run it with `docker-compose up -d`
 
-After that you shoul setup your [cron](https://en.wikipedia.org/wiki/Cron) on host machine with something like this:
+After that you should setup your [cron](https://en.wikipedia.org/wiki/Cron) on host machine with something like this:
 
 ```
 */5 * * * * docker exec pcap2squid_lightsquid_1 ./lightparser.pl today 2>> $PROJ_PATH/errors.log
@@ -43,4 +43,4 @@ tmpfs   $PROJ_PATH/log   tmpfs   rw,size=5G        0       0
 
 To change language of lightsquid report just change `$lang` parameter in [lightsquid.cfg](./lightsquid/lightsquid-1.8/lightsquid.cfg) and rebuild lightsquid image.
 
-If you are using [phpIPAM](https://phpipam.net/), you could using my [script](get-names.py) to complete lightsquid report with real names of ip-addrs users (realname.cfg).
+If you are using [phpIPAM](https://phpipam.net/), you could use my [script](get-names.py) to complete lightsquid report with real names of ip-addrs owners (realname.cfg).
