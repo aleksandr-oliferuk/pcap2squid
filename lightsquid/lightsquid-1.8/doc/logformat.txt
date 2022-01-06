@@ -1,0 +1,17 @@
+
+$squidlogtype - describe access.log format
+
+if you log look like this
+#squid native log
+970313965.619 1249    denis.local TCP_MISS/200 2598 GET    http://www.emral.com/013.jpg userid  DIRECT
+
+set $squidlogtype = 0;
+
+if you log look like this
+#emulated httpd log
+192.168.3.40 - - [15/Apr/2005:11:46:35 +0300] "GET http://css.yandex.ru/css/mail/search.js HTTP/1.0" 200 4199 TCP_HIT:NONE
+
+set $squidlogtype = 1;
+
+for more info see 
+emulate_httpd_log option in squid.conf

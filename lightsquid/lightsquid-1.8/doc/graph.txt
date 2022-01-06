@@ -1,0 +1,20 @@
+for graphics - need instaled libgd & gd.pm
+
+if you don't need graphics report - set $graphreport=0 in lightsquid.cfg
+
+please install it manualy or use automatic installation!
+
+Distributive		installer	command	
+ASP Linux 10		yum		yum install perl-GD	
+Debian "Sarge" 3.1	apt-get		apt-get install libgd-gd2-perl	
+
+
+in config - two veriables
+
+adjust it for your traffic
+
+$graphmaxuser
+$graphmaxall
+
+they define maximum for one user report and all user 
+try play with it

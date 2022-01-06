@@ -1,0 +1,52 @@
+#Translator: Sergey Erokhin, Mykhailo Predeus ;-)
+#Date      : 10.04.06
+#Lang      : ukrainian
+MSG_CODEPAGE=windows-1251
+MSG_HEADER=Звіт по використанню Інтернет, проксі-сервер Squid.
+MSG_ACCESSED_SITE=Відвідані сайти
+MSG_AVERAGE=В середньому
+MSG_BIG_FILE_DOWNLOAD_REPORT=Звіт по ВЕЛИКИХ скачаних файлах
+MSG_BIG_FILES=Хто скачав ВЕЛИКІ файли
+MSG_BYTES=Байт
+MSG_CONNECT=З'єднань
+MSG_CUMULATIVE=Всього
+MSG_DATE=Дата
+MSG_GROUP=Група
+MSG_GRP=груп.
+MSG_HIT%=Cache Hit %
+MSG_MONTH=МІСЯЦЬ
+MSG_NUM=№
+MSG_NOT_IN_GROUP=поза групою
+MSG_OVERSIZE=Перевищили
+MSG_OVERSIZE_HEAD=Користувачі, які перевищили квоту
+MSG_OVERSIZE_TAIL=байт
+MSG_REPORT=(звіт)
+MSG_SIZE=Скачано
+MSG_TIME=Час
+MSG_TOP_SITES=Популярні сайти
+MSG_TOTAL=Всього
+MSG_TOTAL_AVERAGE=Всього/В средньому
+MSG_TIME_REPORT=Час
+MSG_TIME_LINK=[T]
+MSG_URL=URL
+MSG_USER=Користувач
+MSG_USER_WHO_USE_SITE=Користувачі, які відвідали сайт
+MSG_UPDATE=Оновлено
+MSG_USERS=Користувачів 
+MSG_WHO=Ну і хто
+MSG_WHOLE=Всього
+MSG_WORK_PERIOD=Підзвітний період
+MSG_YEAR=PIK
+#
+MSG_MONTH01=Січ
+MSG_MONTH02=Лют
+MSG_MONTH03=Бер
+MSG_MONTH04=Кві
+MSG_MONTH05=Тра
+MSG_MONTH06=Чер
+MSG_MONTH07=Лип
+MSG_MONTH08=Сер
+MSG_MONTH09=Вер
+MSG_MONTH10=Жов
+MSG_MONTH11=Лис
+MSG_MONTH12=Гру

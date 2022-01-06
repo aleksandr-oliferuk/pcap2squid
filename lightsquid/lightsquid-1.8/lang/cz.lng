@@ -1,0 +1,62 @@
+#Version   : 1.6
+#Translator: Bøetislav Kubesa
+#Date      : 
+#Lang      : Czech
+MSG_CODEPAGE=windows-1250
+MSG_%BYTES=%BAJTÙ
+MSG_ACCESSED_SITE=Navštívené odkazy
+MSG_AVERAGE=Prùmìr
+MSG_BIG_FILE_DOWNLOAD_REPORT=Pøehled souborù "pøes limit"
+MSG_BIG_FILES=Soubory pøes limit
+MSG_BYTES=Bajtù
+MSG_CALENDAR=Kalendáø
+MSG_CONNECT=Pøipojení
+MSG_CUMULATIVE=Mezisouèet
+MSG_DATE=Datum
+MSG_DAYLIST=Data
+MSG_GROUP=Skupina
+MSG_GRP=skup
+MSG_GRAPH_LINK=[G]
+MSG_GRAPH_REPORT=Graf
+MSG_HIT%=Hitù %
+MSG_MONTH=MÌSÍC
+MSG_NUM=#
+MSG_NOT_IN_GROUP=není ve skupinì
+MSG_OVERSIZE=Pøes limit
+MSG_OVERSIZE_HEAD=Uživatelé pøes limit
+MSG_OVERSIZE_TAIL=bajtù podle uživatele
+MSG_REPORT=Report
+MSG_SIZE=Velikost
+MSG_HEADER=Statistika uživatelských pøístupù SQUIDu
+MSG_TIME=Èas
+MSG_TOP_SITES=Top odkazy
+MSG_TOTAL=Celkem
+MSG_TOTAL_AVERAGE=Celkem/Prùmìr
+MSG_TIME_REPORT=Èas
+MSG_TIME_LINK=[T]
+MSG_URL=URL
+MSG_UPDATE=aktualizace
+MSG_USER=Uživatel
+MSG_USER_MONTH=[M]
+MSG_USER_WHO_USE_SITE=Uživatelé používajíc odkaz
+MSG_USERID=USERID
+MSG_USERS=Uživatelé
+MSG_WHO=kdo
+MSG_WHOLE=Celý
+MSG_WORK_PERIOD=Období
+MSG_YEAR=ROK
+MSG_REALNAME=Skuteèné jméno
+MSG_WEEKSUM=Týdenní souhrn.
+#
+MSG_MONTH01=leden
+MSG_MONTH02=únor
+MSG_MONTH03=bøezen
+MSG_MONTH04=duben
+MSG_MONTH05=kvìten
+MSG_MONTH06=èerven
+MSG_MONTH07=èervenec
+MSG_MONTH08=srpen
+MSG_MONTH09=záøí
+MSG_MONTH10=øíjen
+MSG_MONTH11=listopad
+MSG_MONTH12=prosinec

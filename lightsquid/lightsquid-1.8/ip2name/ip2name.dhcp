@@ -1,0 +1,74 @@
+#contributor: esl
+#resolve hostname, cache it for speedup
+#dhcpd.conf contain user info in comments
+#look like
+#|#leo-a-2 (igor server)
+#|host lena43{
+#|    hardware ethernet 00:0E:2E:6C:73:01;
+#|    fixed-address 192.168.40.43;
+#|}
+#in StartIp2Name extract IP, usernikc, and username
+# also init hRealName hash used for creating realname.cfg ...
+
+use Socket;
+
+sub StartIp2Name() {
+  my $body = ReadDHCPConfig();
+
+  while ($body =~ m/(\#[^\n]*\n)?host (.*?)\s?\{(.*?)\}/sig) {
+    my $comment=$1;
+    chomp $comment;
+    my $tmp=$3;
+    my $host=$2;
+    $tmp =~ m/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/;
+    my $ip=$1;
+
+    #try extract comp name
+
+    my $comp="";
+    my $user="";
+    if ($comment =~ m/#\s?(\S*)(\s?\((.*?)\))?/) {
+      $comp = $1;
+      $user= $3;
+    }
+    
+    my $id=lc $comp;
+
+    if ($id ne ""){
+        $hIP{$ip}=$id;
+	$hRealName{$id}=$user if ($user ne "");
+    }
+  }
+}
+
+sub Ip2Name($$$) {
+# $Lhost,$user,$Ltimestamp
+  my $ip=shift;
+  if (!defined $hIP{$ip}) {
+
+    my $iaddr = inet_aton($ip);
+    my $user = scalar gethostbyaddr($iaddr, AF_INET);
+    
+    # if gethostbyaddr failed to get host, use ip
+    $user=$ip unless (defined $user);
+
+    $hIP{$ip}=$user;
+  }
+  return $hIP{$ip};
+}
+
+sub StopIp2Name() {
+}
+
+sub ReadDHCPConfig() {
+  local $/;
+  my $file;
+  open FFAAAA,"<","/etc/dhcpd.conf";
+  $file=<FFAAAA>;
+  close FFAAAA;
+  return $file;
+}
+
+#warning !!!!
+1;
+

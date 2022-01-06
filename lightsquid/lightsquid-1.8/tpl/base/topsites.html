@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- LightSquid TPL v1.7 -->
+<html>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <meta http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <title>LightSquid :: Top Site</title>
+</head>
+
+<body background="" bgcolor="white" text="black">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+
+        <tr>
+          <th colspan="2" align="center"><a href="index.cgi">##MSG_HEADER##</a></th>
+        </tr>
+
+        <tr>
+          <th colspan="2" align="center"><b><font color="green" size="+1">##MSG_TOP_SITES##</font></b></th>
+        </tr>
+
+        <tr>
+          <td align="right" bgcolor="blanchedalmond"><font size="-1">##MSG_WORK_PERIOD##:</font></td>
+          <td align="left" bgcolor="beige"><font size="-1">&nbsp;<b>##DATE##&nbsp;</b></font></td>
+        </tr>
+	
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="0" cellspacing="3">
+      <tbody>
+        <tr>
+          <td></td>
+
+          <td></td>
+        </tr>
+
+<!-- VARIABLE selectedattr bgcolor="#FFD700" -->
+
+        <tr bgcolor="blanchedalmond">
+          <th></th>
+          <th></th>
+          <th align="left"><font color="darkblue" size="-1">##MSG_ACCESSED_SITE##</font></th>
+          <th ##SORTCONNECTATTR##><A HREF="##SORTCONNECTURL_L##">##SORTCONNECTURL_B##</A></th>
+          <th ##SORTBYTESATTR##><A HREF="##SORTBYTESURL_L##">##SORTBYTESURL_B##</A></th>
+          <th><font color="darkblue" size="-1">%</font></th>
+        </tr>
+	
+<!-- VARIABLE evenattr bgcolor="beige" -->
+<!-- VARIABLE oddattr bgcolor="cornsilk" -->	
+	
+<!-- [[ site start-->
+        <tr ##ROWATTR##>
+          <td align="right"><font size="-1"><font size="-1">##SITENUM##</font></font></td>
+          <td align="left"><A HREF="##SITEURLWHO_L##">##SITEURLWHO_B##</A></td>
+          <td align="left"><A HREF="##SITEURL_L##">##SITEURL_B##</A></td>
+          <td align="right"><font size="-1">##SITECONNECT##</font></td>
+          <td align="right"><font size="-1">##SITEBYTES##</font></td>
+          <td align="right"><font size="-1">##SITEPERCENT##%</font></td>
+        </tr>
+<!-- ]] site end-->
+        <tr bgcolor="blanchedalmond">
+          <th colspan="4" align="left">##MSG_TOTAL##</th>
+          <th align="right">##TOTAL##</th>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+  <HR>
+  ##COPYRIGHT##
+</body>
+</html>

@@ -1,0 +1,53 @@
+#Version   : 1.5
+#Translator: IVO GELOV <ivo_gelov (@) abv.bg>
+#Date      : 07 Seo 2005
+#Lang      : bulgarian
+MSG_CODEPAGE=windows-1251
+MSG_HEADER=Отчет за потреблението на Интернет. Squid прокси.
+MSG_ACCESSED_SITE=Посетени сайтове
+MSG_AVERAGE=Усреднено
+MSG_BIG_FILE_DOWNLOAD_REPORT=Отчет за ГОЛЕМИ свалени файлове
+MSG_BIG_FILES=Кой е свалял ГОЛЕМИ файлове
+MSG_BYTES=Байта
+MSG_CONNECT=Соединение
+MSG_CUMULATIVE=Обща сума
+MSG_DATE=Дата
+MSG_GROUP=Група
+MSG_GRP=група
+MSG_HIT%=Cache Hit %
+MSG_MONTH=МЕСЕЦ
+MSG_NUM=№
+MSG_NOT_IN_GROUP=извън група
+MSG_OVERSIZE=Превишили
+MSG_OVERSIZE_HEAD=Потребители, които са превишили квотата
+MSG_OVERSIZE_TAIL=байта
+MSG_REPORT=Отчет
+MSG_SIZE=Изхарчено
+MSG_TIME=Време
+MSG_TOP_SITES=Популярни сайтове
+MSG_TOTAL=Общо
+MSG_TOTAL_AVERAGE=Общо/средно
+MSG_TIME_REPORT=Време
+MSG_TIME_LINK=[T]
+MSG_URL=URL
+MSG_USER=Потребител
+MSG_USER_WHO_USE_SITE=Потребители, посетили сайта
+MSG_UPDATE=Обновено
+MSG_USERS=Полтребители
+MSG_WHO=кой именно
+MSG_WHOLE=целия
+MSG_WORK_PERIOD=Отчетен период
+MSG_YEAR=ГОДИНА
+#
+MSG_MONTH01=Яну
+MSG_MONTH02=Фев
+MSG_MONTH03=Мар
+MSG_MONTH04=Апр
+MSG_MONTH05=Май
+MSG_MONTH06=Юни
+MSG_MONTH07=Юли
+MSG_MONTH08=Авг
+MSG_MONTH09=Сеп
+MSG_MONTH10=Окт
+MSG_MONTH11=Ное
+MSG_MONTH12=Дек

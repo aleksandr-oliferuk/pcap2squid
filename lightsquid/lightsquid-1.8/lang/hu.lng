@@ -1,0 +1,55 @@
+#Version   : 1.5
+#Translator: Tibor Gnandt <tgnandt (@) csoft.ro>
+#Date      : 03 Jun 2005
+#Lang      : hungarian
+MSG_CODEPAGE=ISO-8859-2
+MSG_%BYTES=%BÁJTOK
+MSG_ACCESSED_SITE=Meglátogatott oldalak
+MSG_AVERAGE=Átlag
+MSG_BIG_FILE_DOWNLOAD_REPORT=Nagy állományok letöltése
+MSG_BIG_FILES=Nagyméretû állományok
+MSG_BYTES=Bájtok
+MSG_CONNECT=Kapcsolódás
+MSG_CUMULATIVE=Összeg
+MSG_DATE=Dátum
+MSG_GROUP=Csoport
+MSG_GRP=csop
+MSG_HIT%=Találat %
+MSG_MONTH=HÓNAP
+MSG_NUM=#
+MSG_NOT_IN_GROUP=nincs a csoportban
+MSG_OVERSIZE=Túlméretes
+MSG_OVERSIZE_HEAD=A felhasználó túllépte a(z)
+MSG_OVERSIZE_TAIL= bájtot
+MSG_REPORT=jelentés
+MSG_SIZE=Méret
+MSG_HEADER=Proxy forgalom elemzés
+MSG_TIME=Idõ
+MSG_TOP_SITES=Nagyforgalmú oldalak
+MSG_TOTAL=Összesen
+MSG_TOTAL_AVERAGE=Össz/Átlag
+MSG_TIME_REPORT=Idõ
+MSG_TIME_LINK=[Idõ]
+MSG_URL=URL
+MSG_UPDATE=frissítve
+MSG_USER=Felhasználó
+MSG_USER_WHO_USE_SITE=Látogatások
+MSG_USERID=FELH.NÉV
+MSG_USERS=Felhasználók
+MSG_WHO=ki?
+MSG_WHOLE=Teljes
+MSG_WORK_PERIOD=Idõszak
+MSG_YEAR=ÉV
+#
+MSG_MONTH01=Jan
+MSG_MONTH02=Feb
+MSG_MONTH03=Mar
+MSG_MONTH04=Apr
+MSG_MONTH05=Maj
+MSG_MONTH06=Jun
+MSG_MONTH07=Jul
+MSG_MONTH08=Aug
+MSG_MONTH09=Sze
+MSG_MONTH10=Okt
+MSG_MONTH11=Nov
+MSG_MONTH12=Dec

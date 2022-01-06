@@ -1,0 +1,40 @@
+---
+version: '3'
+services:
+  lightsquid:
+    image: oliferuk/lightsquid:latest
+    env_file:
+      - .env
+    volumes:
+      - $PROJ_PATH/log/:/var/www/html/log/
+      - $PROJ_PATH/report/:/var/www/html/report/
+      - $PROJ_PATH/realname.cfg:/var/www/html/realname.cfg
+    ports:
+      - $LIGHTSQUID_LISTEN_PORT:80
+    networks:
+      lightsquid_network:
+    restart: always
+
+  parser:
+    image: oliferuk/parser:latest
+    env_file:
+      - .env
+    volumes:
+      - $PROJ_PATH/dump/:/var/parser/dump/
+      - $PROJ_PATH/log/:/var/parser/log/
+    ports:
+      - 37008:37008/udp
+    depends_on:
+      - lightsquid
+    networks:
+      parser_network:
+    restart: always
+
+networks:
+  lightsquid_network:
+  parser_network:
+
+volumes:
+  lightsquid-volume:
+  parser-volume:
+...

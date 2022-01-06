@@ -1,0 +1,54 @@
+#Version   : 1.5
+#Translator: LeOS <leos (@) bilug.linux.it>, 
+#Date      : 12-Maj-2005
+MSG_CODEPAGE=ISO-8859-1
+MSG_%BYTES=%BYTES
+MSG_ACCESSED_SITE=Sito visitato
+MSG_AVERAGE=Media
+MSG_BIG_FILE_DOWNLOAD_REPORT=Grandi File Scaricati
+MSG_BIG_FILES=Grandi Files
+MSG_BYTES=Bytes
+MSG_CONNECT=Numero accessi
+MSG_CUMULATIVE=Totale
+MSG_DATE=Data
+MSG_GROUP=Gruppo
+MSG_GRP=grp
+MSG_HIT%=Click %
+MSG_MONTH=MESE
+MSG_NUM=#
+MSG_NOT_IN_GROUP=nessun gruppo
+MSG_OVERSIZE=Sovradimensionato
+MSG_OVERSIZE_HEAD=Utenti che hanno superato il limite
+MSG_OVERSIZE_TAIL=bytes, per quota utente
+MSG_REPORT=Rapporto
+MSG_SIZE=Dimensione
+MSG_HEADER=Rapporto accesso utenti Squid
+MSG_TIME=Ora
+MSG_TOP_SITES=Siti maggiormente visitati
+MSG_TOTAL=Totale
+MSG_TOTAL_AVERAGE=Totale/Media
+MSG_TIME_REPORT=Ora
+MSG_TIME_LINK=[ora]
+MSG_URL=URL
+MSG_UPDATE=aggiorna
+MSG_USER=Utente
+MSG_USER_WHO_USE_SITE=Utente che usa il Sito
+MSG_USERID=USERID
+MSG_USERS=Utenti
+MSG_WHO=chi
+MSG_WHOLE=Tutto
+MSG_WORK_PERIOD=Periodo
+MSG_YEAR=ANNO
+#
+MSG_MONTH01=Gen
+MSG_MONTH02=Feb
+MSG_MONTH03=Mar
+MSG_MONTH04=Apr
+MSG_MONTH05=Mag
+MSG_MONTH06=Giu
+MSG_MONTH07=Lug
+MSG_MONTH08=Ago
+MSG_MONTH09=Set
+MSG_MONTH10=Ott
+MSG_MONTH11=Nov
+MSG_MONTH12=Dic

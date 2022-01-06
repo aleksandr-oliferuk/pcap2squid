@@ -1,0 +1,22 @@
+#contributor: esl
+#specialy for squid with turned on user authentication
+#simple version
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+  # $Lhost,$user,$Ltimestamp
+  my $Lhost=shift;
+  my $user =shift;
+  $user    =URLDecode($user); #decode user name
+  return $user if ($user ne "-");
+  return $Lhost;
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!
+1;
+

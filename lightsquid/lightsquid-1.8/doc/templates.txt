@@ -1,0 +1,39 @@
+totaly rewrite LightSquid .cgi part
+
+now use HTML TEMPLATES, in .cgi files - only programm logic, more clear and easy modification.
+
+detail:
+in config now 2 new variable
+
+   #html template name (see tpl folder)
+   $templatename        ="base";
+
+   #color for selected item (year, month, ...)
+   $selectedcolor       ="#44CC77";
+   
+templates in `tpl` folder, (now contain only `base` template)
+
+if you need modification - copy `base` folder in new, hack it, and modify $templatename variable
+
+templates - simple HTML file with some macros
+
+##VARIABLE## - replaces by corresponding value
+
+<!-- [[ blockname start-->
+  repeatable block
+<!-- ]] blockname end-->  
+
+uses when build report list
+
+<!-- HIDE oversize start -->
+        hided block
+<!-- HIDE oversize end -->
+
+block deleted from html if called HideTPL("oversize");
+
+trying play with it,
+
+!!WARNING!! -  all ##VARIABLE## and block must be in your file !!!!!!!
+
+templates very simple and dumb.
+

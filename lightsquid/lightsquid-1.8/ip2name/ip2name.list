@@ -1,0 +1,41 @@
+#ESL
+#convert user -> ip , get user name from file
+#file format
+#
+#192.168.0.96 User1
+#192.168.0.106 User2
+#192.168.0.105 User3
+#
+#if user not found -> return IP 
+
+sub StartIp2Name() {
+    my $ipfile = "/etc/squid/users.txt";
+
+    open (F, "<$ipfile") || die ("ERROR: Can't open $ipfile!!! \n");
+    while (<F>) {
+      chomp;
+      ($ip,$user) = split;
+      $hIP2NAME{$ip}=$user;
+    }  
+    close (F);
+}
+
+sub Ip2Name($$$) {
+# $Lhost,$user,$Ltimestamp
+    my $ip=shift;
+    my $ret;
+    
+    if (defined $hIP2NAME{$ip}) {
+      $ret=$hIP2NAME{$ip};
+    } else {
+      $ret=$ip;
+    }
+    
+    return $ret;
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!
+1;

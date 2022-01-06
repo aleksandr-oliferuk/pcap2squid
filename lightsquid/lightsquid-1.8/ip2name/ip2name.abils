@@ -1,0 +1,50 @@
+#convert user -> ip , get user name from abills database 
+#support ABILS billing system http://abills.asmodeus.com.ua/
+#(c) wazzup, posted on LightSquid Forum  20 Dec 2006 06:23 am
+
+use DBI; 
+use Socket; 
+my $dbh; 
+
+
+sub StartIp2Name() { 
+    $dbh = DBI->connect("DBI:mysql:database=abills;host=localhost","abills", "abillspasswd" ) || die $DBI::errstr; 
+} 
+
+sub Ip2Name($$$) { 
+# $Lhost,$user,$Ltimestamp 
+    my $ip=shift; 
+    my $user_name=shift; 
+    my $time=shift; 
+    
+    my $ret; 
+    my $result1 = $dbh->prepare("select started, user_name, framed_ip_address from dv_calls where( framed_ip_address='".unpack('N',inet_aton($ip))."')and (started<FROM_UNIXTIME('".$time."'))  order by started DESC"); 
+    
+    $result1->execute(); 
+    
+    if (my $ln = $result1->fetchrow_hashref()) { 
+         $ret=$ln->{'user_name'}; 
+      
+    } 
+    else 
+    {    
+        my $result = $dbh->prepare("select start,users.id , ip  from dv_log ,users where   (users.uid=dv_log.uid) and (ip='".unpack('N',inet_aton($ip))."')and (start < FROM_UNIXTIME('".$time."'))  order by start DESC"); 
+   $result->execute(); 
+   if (my $ln = $result->fetchrow_hashref()) { 
+      $ret=$ln->{'id'}; 
+   } 
+   else { 
+         $ret=$ip; 
+        } 
+   $result->finish(); 
+    } 
+    $result1->finish(); 
+
+    return $ret; 
+} 
+sub StopIp2Name() { 
+    $dbh->disconnect(); 
+} 
+
+#warning !!! 
+1;

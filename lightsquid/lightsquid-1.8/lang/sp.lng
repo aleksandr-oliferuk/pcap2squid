@@ -1,0 +1,55 @@
+#Version   : 1.5
+#Translator: Alberto Uez <alosue (@) gmail.com>
+#Date      : 23 Jun 2005
+#Lang      : spain
+MSG_CODEPAGE=ISO-8859-1
+MSG_%BYTES=%BYTES
+MSG_ACCESSED_SITE=Sitios accedidos
+MSG_AVERAGE=Promedio
+MSG_BIG_FILE_DOWNLOAD_REPORT=Informe de mayores archivos
+MSG_BIG_FILES=Archivos mas grandes
+MSG_BYTES=Bytes
+MSG_CONNECT=Conexiones
+MSG_CUMULATIVE=Total
+MSG_DATE=Fecha
+MSG_GROUP=Grupo
+MSG_GRP=grp
+MSG_HIT%=Hit %
+MSG_MONTH=MES
+MSG_NUM=#
+MSG_NOT_IN_GROUP=sin grupo
+MSG_OVERSIZE=Excedidos
+MSG_OVERSIZE_HEAD=Usuarios que excedieron
+MSG_OVERSIZE_TAIL=bytes, por cuota de usuario
+MSG_REPORT=Informe
+MSG_SIZE=Tamaño
+MSG_HEADER=Informe de accesos de usuarios de Squid
+MSG_TIME=Hora
+MSG_TOP_SITES=Sitios Top
+MSG_TOTAL=Total
+MSG_TOTAL_AVERAGE=Total/Promedio
+MSG_TIME_REPORT=Hora
+MSG_TIME_LINK=[T]
+MSG_URL=URL
+MSG_UPDATE=actualizado
+MSG_USER=Usuario
+MSG_USER_WHO_USE_SITE=Usuario que accedió al sitio
+MSG_USERID=ID USUARIO
+MSG_USERS=Usuarios
+MSG_WHO=quien
+MSG_WHOLE=Todo el
+MSG_WORK_PERIOD=Período comprendido
+MSG_YEAR=AÑO
+#
+MSG_MONTH01=Ene
+MSG_MONTH02=Feb
+MSG_MONTH03=Mar
+MSG_MONTH04=Abr
+MSG_MONTH05=May
+MSG_MONTH06=Jun
+MSG_MONTH07=Jul
+MSG_MONTH08=Ago
+MSG_MONTH09=Sep
+MSG_MONTH10=Oct
+MSG_MONTH11=Nov
+MSG_MONTH12=Dic

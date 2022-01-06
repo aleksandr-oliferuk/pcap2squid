@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- LightSquid TPL v1.7 -->
+<html>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <meta http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <title>LightSquid :: Whole Month User Report</title>
+</head>
+
+<body bgcolor="white" text="black">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th align="center"><a href="index.cgi">##MSG_HEADER##</a></th>
+        </tr>
+	<tr></tr>
+        <tr>
+          <th align="center"><b><font color="red" size="+2">##MSG_WHOLE## ##WHOLEPERIOD##</font></b></th>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td align="center" bgcolor="blanchedalmond"><font size="-1">##MSG_WORK_PERIOD##:</font></td>
+          <td align="left" bgcolor="beige"><font size="-1">&nbsp;<b>##DATE##&nbsp;</b></font></td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <table cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                </tr>
+
+                <tr bgcolor="blanchedalmond">
+                  <th><font color="darkblue" size="-1">##MSG_NUM##</font></th>
+<!-- HIDE timereport start-->
+                  <th><font color="darkblue" size="-1">##MSG_TIME_REPORT##</font></th>
+<!-- HIDE timereport end-->
+<!-- HIDE graphreport start-->
+                  <th><font color="darkblue" size="-1">##MSG_GRAPH_REPORT##</font></th>
+<!-- HIDE graphreport end-->
+<!-- HIDE monthreport start-->
+                  <th><font color="darkblue" size="-1">##MSG_MONTH##</font></th>
+<!-- HIDE monthreport end-->
+                  <th><font color="darkblue" size="-1">##MSG_USER##</font></th>
+<!-- HIDE realname start-->
+                  <th><font color="darkblue" size="-1">##MSG_REALNAME##</font></th>
+<!-- HIDE realname end-->
+                  <th><font color="darkblue" size="-1">##MSG_CONNECT##</font></th>
+                  <th><font color="darkblue" size="-1">##MSG_BYTES##</font></th>
+                  <th><font color="darkblue" size="-1">%</font></th>
+                  <th><font color="darkblue" size="-1">##MSG_CUMULATIVE##</font></th>
+                </tr>
+
+                <tr>
+                  <td></td>
+                </tr>
+		
+<!-- VARIABLE oddattr  bgcolor="beige" -->
+<!-- VARIABLE evenattr bgcolor="cornsilk" -->
+		
+<!-- [[ user start-->
+                <tr ##ROWATTR##>
+                  <td border="0" align="right"><font size="-1">##USERNUM##</font></td>
+<!-- HIDE timereport start-->
+                  <td  align="center"><A HREF="##TIMEURL_L##"><img src="get.cgi?png=datetime" border="0" title="Graph Report"></A></td>
+<!-- HIDE timereport end-->
+<!-- HIDE graphreport start-->
+		  <td align="center"><A HREF="##GRAPHURL_L##"><img src="get.cgi?png=graph" border="0" title="Graph Report"></A></td>
+<!-- HIDE graphreport end-->
+<!-- HIDE monthreport start-->
+                  <td align="center"><A HREF="##USERMONTHURL_L##">##USERMONTHURL_B##</A></td>
+<!-- HIDE monthreport end-->
+                  <td ><A HREF="##USERURL_L##">##USERURL_B##</A></td>
+<!-- HIDE realname start-->
+                  <td align="right" nowrap="true"><font size="-1">##REALNAME##</font></td>
+<!-- HIDE realname end-->
+                  <td align="right"><font size="-1">##USERCONNECT##</font></td>
+                  <td align="right"><font size="-1">##USERBYTES##</font></td>
+                  <td align="right"><font size="-1">##USERPERCENT##%</font></td>
+                  <td align="right"><font size="-1">##ALLUSERTOTAL##</font></td>
+                </tr>
+<!-- ]] user end-->
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <HR>
+    ##COPYRIGHT##
+  </center>
+</body>
+</html>

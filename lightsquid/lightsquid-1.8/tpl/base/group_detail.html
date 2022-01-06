@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- LightSquid TPL v1.7 -->
+<html>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <meta http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <title>LightSquid :: Day detail - Group Mode</title>
+</head>
+
+<body bgcolor="white" text="black">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th align="center"><a href="index.cgi">##MSG_HEADER##</a></th>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td align="center" bgcolor="blanchedalmond"><font size="-1">##MSG_DATE##:</font></td>
+          <td align="left" bgcolor="beige"><font size="-1">&nbsp;<b>##DATE##&nbsp;</b></font></td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+<!-- HIDE dayinfo start-->
+         <tr>
+	    <td colspan="11"><font size="-1"><A HREF="##TOPSITESURL_L##">##TOPSITESURL_B##</A> ##MSG_REPORT##</font></td>
+	 </tr>
+	 <tr>
+	    <td colspan="11"><font size="-1"><A HREF="##BIGFILESURL_L##">##BIGFILESURL_B##</A> ##MSG_REPORT##</font></td>
+	 </tr>
+<!-- HIDE dayinfo end -->  
+      </tbody>
+    </table>
+  </center>
+
+  <table border="1" width="100%">
+    <tbody>
+      <tr align="center" valign="top">
+        <td align="center" valign="top">
+          <center>
+            
+	    <table cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+
+                <tr bgcolor="blanchedalmond">
+                  <th><font color="darkblue" size="-1">##MSG_NUM##</font></th>
+<!-- HIDE timereport start-->
+                  <th><font color="darkblue" size="-1">##MSG_TIME_REPORT##</font></th>
+<!-- HIDE timereport end-->
+                  <th><font color="darkblue" size="-1">##MSG_USER##</font></th>
+<!-- HIDE realname start-->
+                  <th><font color="darkblue" size="-1">##MSG_REALNAME##</font></th>
+<!-- HIDE realname end-->
+                  <th><font color="darkblue" size="-1">##MSG_CONNECT##</font></th>
+                  <th><font color="darkblue" size="-1">##MSG_BYTES##</font></th>
+                  <th><font color="darkblue" size="-1">%</font></th>
+                </tr>
+
+                <tr>
+                  <td></td>
+                </tr>
+<!-- [[ groupstart start-->
+                <tr>
+                  <td colspan="7" bgcolor="blanchedalmond"><A name="##GROUPSTARTURL_L##">##GROUPSTARTURL_B##</A></td>
+                </tr>
+<!-- ]] groupstart end-->
+
+<!-- VARIABLE evenattr bgcolor="beige"    -->
+<!-- VARIABLE oddattr  bgcolor="cornsilk" -->
+	
+<!-- [[ user start-->
+                <tr ##ROWATTR##>
+                  <td border="0" align="right" ><font size="-1">##USERNUM##</font></td>
+<!-- HIDE timereport start-->
+		  <td><A HREF="##TIMEURL_L##"><img src="get.cgi?png=datetime" border="0" title="Graph Report"></A></td>
+<!-- HIDE timereport end-->
+		  <td><A HREF="##USERURL_L##">##USERURL_B##</A></td>
+<!-- HIDE realname start-->
+                  <td align="right" nowrap="true"><font size="-1">##REALNAME##</font></td>
+<!-- HIDE realname end-->		  
+                  <td align="right"><font size="-1">##USERCONNECT##</font></td>
+                  <td align="right"><font size="-1">##USERBYTES##</font></td>
+                  <td align="right"><font size="-1">##USERPERCENT##%</font></td>
+                </tr>
+<!-- ]] user end-->
+
+<!-- [[ groupend start-->
+                <tr>
+                  <td colspan="3"></td>
+<!-- HIDE timereport start-->
+                  <td></td>
+<!-- HIDE timereport end-->
+<!-- HIDE realname start-->
+                  <td></td>
+<!-- HIDE realname end-->
+                  <td align="right" bgcolor="blanchedalmond">##GROUPENDBYTES##</td>
+                  <td align="right" bgcolor="blanchedalmond">##GROUPENDPERCENT##%</td>
+                </tr>
+<!-- ]] groupend end-->
+
+              </tbody>
+            </table>
+          </center>
+        </td>
+         
+	<!-- Rigth Column -->
+        <td align="center" valign="top">
+          <table allign="center">
+            <tbody>
+
+              <tr>
+                <td></td>
+              </tr>
+
+	      <tr bgcolor="blanchedalmond">
+                <td border="0" align="right"><font size="-1">##MSG_NUM##</font></td>
+                <td><font size="-1">##MSG_GROUP##</font></td>
+                <td align="right"><font size="-1">##MSG_BYTES##</font></td>
+                <td align="right"><font size="-1">%</font></td>
+              </tr>
+
+              <tr>
+                <td></td>
+              </tr>
+	      
+<!-- [[ grouplist start-->
+	      <tr ##GROUPROWATTR##>
+                <td border="0" align="right"><font size="-1">##GROUPLISTNUM##</font></td>
+                <td><font size="-1"><A HREF="##GROUPLISTNAMEURL_L##">##GROUPLISTNAMEURL_B##</A></font></td>
+                <td align="right"><font size="-1">##GROUPLISTBYTES##</font></td>
+                <td align="right"><font size="-1">##GROUPLISTPERCENT##</font></td>
+              </tr>
+<!-- ]] grouplist end-->
+
+	    </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <HR>
+  ##COPYRIGHT##
+</body>
+</html>

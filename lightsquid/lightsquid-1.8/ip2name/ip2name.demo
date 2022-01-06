@@ -1,0 +1,33 @@
+#contributor: esl
+#return user, if defined ;-)
+#return hostname if defined,
+#if hostname not definet, for homensubnet return 192.168.1.10 -> #010
+#else - return ip
+#skip ip 192.168.1.250
+
+$homesubnet          = "192.168.1.";
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+# $Lhost,$user,$Ltimestamp
+  my $IP=shift;
+  my $userid=shift;
+  my $user=$IP;
+
+  return $userid if ($userid ne "-");
+
+  my $user2  = `host $user`;
+     $user2 =~ m/domain name pointer (.*?).$/;
+     $user2 = $1;
+     if ($user2 =~ m/$oursubnet(\d*)/) {$user = sprintf("#%03d",$1);}
+     else                              {$user = $user2;}
+  return $user;
+}
+
+sub StopIp2Name() {
+}
+
+#WARNING !!!!!
+1;

@@ -1,0 +1,21 @@
+#contributor: esl
+#do nothing
+#simple version
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+  # $Lhost,$user,$Ltimestamp
+  my $Lhost=shift;
+  my $user =shift;
+  return $user if ($user ne "-"); #return user if defined !!!!!
+  return $Lhost;
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!
+1;
+

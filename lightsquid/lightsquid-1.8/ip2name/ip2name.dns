@@ -1,0 +1,30 @@
+#contributor: esl
+#resolve hostname, cache it for speedup
+# -- vim: filetype=perl
+
+use Socket;
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+# $Lhost,$user,$Ltimestamp
+  my $ip=shift;
+  if (!defined $hIP{$ip}) {
+
+    my $iaddr = inet_aton($ip);
+    my $user = scalar gethostbyaddr($iaddr, AF_INET);
+    
+    # if gethostbyaddr failed to get host, use ip
+    $user=$ip unless (defined $user);
+
+    $hIP{$ip}=$user;
+  }
+  return $hIP{$ip};
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!!
+1;

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- LightSquid TPL v1.7 -->
+<html>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <meta http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <title>LightSquid :: Day detail</title>
+</head>
+
+<body bgcolor="white" text="black">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <th align="center"><a href="index.cgi">##MSG_HEADER##</a></th>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td align="center" bgcolor="blanchedalmond"><font size="-1">##MSG_DATE##:</font></td>
+          <td align="left" bgcolor="beige"><font size="-1">&nbsp;<b>##DATE##&nbsp;</b></font></td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <table cellpadding="2" cellspacing="2">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="11"><font size="-1"><A HREF="##TOPSITESURL_L##">##TOPSITESURL_B##</A> ##MSG_REPORT##</font></td>
+                </tr>
+
+                <tr>
+                  <td colspan="11"><font size="-1"><A HREF="##BIGFILESURL_L##">##BIGFILESURL_B##</A> ##MSG_REPORT##</font></td>
+                </tr>
+
+<!-- HIDE overuser start-->		  
+                <tr>
+                  <td colspan="11"><font color="red" size="+1">##OVERMSG##</font></td>
+                </tr>
+<!-- HIDE overuser end-->		  
+		
+                <tr bgcolor="blanchedalmond">
+                  <th><font color="darkblue" size="-1">##MSG_NUM##</font></th>
+<!-- HIDE timereport start-->		  
+                  <th><font color="darkblue" size="-1">##MSG_TIME_REPORT##</font></th>
+<!-- HIDE timereport end-->		  
+                  <th><font color="darkblue" size="-1">##MSG_USER##</font></th>
+<!-- HIDE realname start-->		  
+                  <th><font color="darkblue" size="-1">##MSG_REALNAME##</font></th>
+<!-- HIDE realname end-->		  
+                  <th><font color="darkblue" size="-1">##MSG_CONNECT##</font></th>
+<!-- HIDE putpost start-->		  
+                  <th><font color="darkblue" size="-1">##MSG_PUTPOST##</font></th>
+<!-- HIDE putpost end-->		  
+                  <th><font color="darkblue" size="-1">##MSG_BYTES##</font></th>
+                  <th><font color="darkblue" size="-1">%</font></th>
+<!-- HIDE group start -->
+                  <th><font color="darkblue" size="-1">##MSG_GROUP##</font></th>
+<!-- HIDE group end -->
+                </tr>
+
+                <tr>
+                  <td></td>
+                </tr>
+		
+<!-- VARIABLE evenattr bgcolor="beige"    -->
+<!-- VARIABLE oddattr  bgcolor="cornsilk" -->
+
+<!-- VARIABLE !putpostnormalattr  color="black" -->
+<!-- VARIABLE !putpostwarningattr color="red"   -->
+
+<!-- VARIABLE putpostnormalattr  </> -->
+<!-- VARIABLE putpostwarningattr <img src="get.cgi?png=flag_red" border="0" title="Graph Report">  -->
+
+
+		
+<!-- [[ user start-->
+                <tr ##ROWATTR##>
+                  <td border="0" align="right"><font size="-1">##USERNUM##</font></td>
+<!-- HIDE timereport start-->		  
+		  <td align="center"><A HREF="##TIMEURL_L##"><img src="get.cgi?png=datetime" border="0" title="Graph Report"></A></td>
+<!-- HIDE timereport end-->		  
+                  <td><A HREF="##USERURL_L##">##USERURL_B##</A></td>
+<!-- HIDE realname start-->		  
+                  <td align="right" nowrap="true"><font size="-1">##REALNAME##</font></td>
+<!-- HIDE realname end-->		  
+                  <td align="right" nowrap="true"><font size="-1">##USERCONNECT##</font></td>
+<!-- HIDE putpost start-->		  
+                  <td align="right" nowrap="true"><font size="-1">##USERPUTPOST####OVERPUTPOSTATTR##</font></td>
+<!-- HIDE putpost end-->		  
+                  <td align="right" nowrap="true"><font size="-1">##USERBYTES##</font></td>
+                  <td align="right" ><font size="-1">##USERPERCENT##%</font></td>
+<!-- HIDE group start -->
+                  <td align="left" ><font size="-1"><A HREF="##USERGROUPURL_L##">##USERGROUPURL_B##</A></font></td>
+<!-- HIDE group end -->
+                </tr>
+<!-- ]] user end-->
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    ##COPYRIGHT##
+  </center>
+</body>
+</html>

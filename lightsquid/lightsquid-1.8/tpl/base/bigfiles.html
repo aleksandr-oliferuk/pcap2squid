@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- LightSquid TPL v1.7 -->
+<html>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <meta http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <title>LightSquid :: Big Files Report</title>
+</head>
+
+<body background="" bgcolor="white" text="black">
+  <center>
+    <table cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr><th colspan="2" allign="center"><a href="index.cgi">##MSG_HEADER##</a><th></tr>
+        <tr><th colspan="2" align="center"><b><font color="green" size="+1">##MSG_BIG_FILE_DOWNLOAD_REPORT##</font></b></th>
+        </tr>
+        <tr>
+          <th align="center"><b><font color="#0033FF">##MSG_DATE##:</font> <font color="#FF0000">##DATE##</font></b></th>
+        </tr>
+<!-- HIDE reportuser start-->		  
+        <tr>
+          <th align="center"><b><font color="#0033FF">##MSG_USER##:</font> <font color="#FF0000">##REPORTUSER##</font></b></th>
+        </tr>
+<!-- HIDE reportuser end-->		  
+        <tr><td></td></tr>
+        <tr><td></td></tr>
+      </tbody>
+    </table>
+  </center>
+
+  <center>
+    <table cellpadding="0" cellspacing="3">
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr bgcolor="blanchedalmond">
+          <th><font color="darkblue" size="-1">##MSG_NUM##</font></th>
+          <th><font color="darkblue" size="-1">##MSG_TIME##</font></th>
+          <th><font color="darkblue" size="-1">##MSG_USER##</font></th>
+          <th><font color="darkblue" size="-1">##MSG_SIZE##</font></th>
+          <th><font color="darkblue" size="-1">##MSG_URL##</font></th>
+        </tr>
+
+        <tr>
+          <td></td>
+        </tr>
+
+<!-- VARIABLE evenattr bgcolor="beige" -->
+<!-- VARIABLE oddattr  bgcolor="cornsilk" -->
+<!-- VARIABLE total    bgcolor="blanchedalmond" -->
+
+<!-- [[ bigfile start-->
+        <tr ##ROWATTR##>
+          <td align="left" ><font size="-1"><font size="-1">##BFILENUM##</font></font></td>
+          <td align="left" ><font size="-1"><font size="-1">##BFILETIME##</font></font></td>
+          <td align="left" ><font size="-1"><font size="-1"><A HREF="##BFILEUSER_L##">##BFILEUSER_B##</A></font></font></td>
+          <td align="right" nowrap="true"><font size="-1"><font size="-1">##BFILESIZE##</font></font></td>
+          <td align="right" ><font size="-1">##BFILELINK##</font></td>
+        </tr>
+<!-- ]] bigfile end-->
+      
+      </tbody>
+    </table>
+    <HR>
+    ##COPYRIGHT##
+  </center>
+</body>
+</html>

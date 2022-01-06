@@ -1,0 +1,80 @@
+Installation Instructions:
+
+Required software:
+
+   1. Perl
+   2. Apache
+   3. Squid
+   4. Cron
+
+   or equivalent
+
+1. Extract lightsquid.tgz into any folder 
+
+   cd /var/www/htdocs/
+   mkdir lightsquid
+   cd lightsquid
+   tar -xzf lightsquid.tgz
+   chmod +x *.cgi
+   chmod +x *.pl
+   
+   chown -R apache:apache *
+   (where apache = httpd user)
+
+2. Configure your Apache server to allow override control
+    if disable gloabal override is defined in httpd.conf;
+
+    <Directory "/var/www/html/lightsquid">
+       AddHandler cgi-script .cgi
+       AllowOverride All
+    </Directory>
+
+    Restart apache
+
+3. Edit lightsquid.cfg 
+
+4. Edit group.cfg file if you want group user
+
+   format: 
+  # anyword      digit          anyword
+    userid	groupnum	groupname
+
+5. Edit realname.cfg file if you want group user
+
+   format: 
+  # anyword     anyword
+    userid	Real Name
+
+6. if you want graphics report check graph.txt
+    
+7. run check-setup.pl
+   if all done try next step
+   else check config file.
+  
+8. Try run lightparser.pl
+     if everything is ok no messages will be produced
+
+     parse old statistic
+     ./lightparser.pl access.log.1.{gz|bz2}
+     ./lightparser.pl access.log.2.{gz|bz2}
+     ./lightparser.pl access.log.3.{gz|bz2}
+     ...
+     
+9. Try to use lightsquid
+ 
+      Using your favorite browser enter http://<host where we live>/lightsquid/
+
+10. Setup crontab to run lightparser once per hour
+
+      crontab -e
+      This example will execute parser at 55 minutes after every hour:
+
+      */55 * * * * /var/www/htdocs/lightsquid/lightparser.pl today
+      
+      if you have small log and fast machine, you may run lightparser with smaller delay
+      !!!warning!!! not set interval less 10 min !!!!!
+      
+11. All done!
+
+12. If you have problems, define $debug variable in lightsquid.cfg and rerun lightparser.
+

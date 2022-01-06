@@ -1,0 +1,15 @@
+Pfunk Mallone <pfunkspam__at__lycos.com>	-	documentation spellcheck
+Angel IL 					-	(update hh:mm)
+George Moury 					-	Idea about PHANTOM user in report ...
+
+##	Language		Translator	
+ 1	English			ESL	 	
+ 2	Russian			ESL,Vladislav Naumov	
+ 3	Italian			LeOS	
+ 4 	Hungarian		Tibor Gnandt	
+ 5	Portuguese - Brazil	Andre D. Correa	
+ 6	Bulgarian		IVO GELOV	
+ 7	Spanish	Alberto 	Uez fix	
+ 8	French			laurent brichet	
+ 9	Ukrainian		Mykhailo Predeus 
+10	Czech			Bøetislav Kubesa

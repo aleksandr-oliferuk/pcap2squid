@@ -1,0 +1,13 @@
+cryptography
+dpkt
+enum34
+idna
+ipaddress
+keyring
+keyrings.alt
+pyasn1
+pycrypto
+pygobject
+pyxdg
+SecretStorage
+six

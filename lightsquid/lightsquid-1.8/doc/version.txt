@@ -1,0 +1,90 @@
+
+2005-04-13	1.0
+		initial release
+
+2005-05-15	1.1
+		fix documentation bug (start in cron every 55 sec)
+		fix bug in user_detail (displaye size, not hit)
+		add PerUserTrafficLimit support
+		add some fault check
+		add debug messages in parser
+		
+2005-05-18	1.4
+		add TemplateEngine !!!
+		add EmulateHTTPDLog format support
+		fix .cgi code cleanup
+		add html-robots instruction
+		fix html cleanup
+
+2005-05-26	1.5
+		lightparser.pl
+		    ADD ip2name function in subdir
+		    ADD .bz2 support
+		    ADD cachehit calclulation
+		    ADD oversize user calculator
+		    FIX httpdlike squid log now work.
+		    FIX mkdir 655 -> mkdir 755
+		    ADD StartUser & StopUser function
+		
+		index.cgi
+		    ADD Template Engine, HIDE function
+        	    ADD whole month report now support YEAR
+	    	    ADD GetFeatures function for access to .features file
+		    ADD all row AVERAGE report
+		    ADD StartUser, StopUser sobroutine				
+		
+		day_detail*.cgi
+		    ADD show update time
+		    
+                month_detail.cgi
+		    ADD now support YEAR report, tpl fix		
+		    
+		user_detail.cgi
+		    ADD now support mode=year (show whole year user report)
+		    
+		config news
+		
+		# define delimiter for hunders
+		# = " " -> 12 345 678
+		# = "," -> 12,345,678
+		# = ""  ->   12345678
+		$decdelimiter        = " ";
+		
+		#if you dont need oversize report , do =0
+		$showoversizelink    = 1
+		
+		#-------------------------------------------------------------------------- IP -> name
+		#define sobroutine file for convertion from IP into name
+		#if you want skip some ip from log - return "SKIP THIS IP" ;-)
+		#detail see in ip2name folder,
+		
+		#$ip2name="dns";
+		$ip2name="simple"
+		
+
+----------------------
+2005-06-06	TPL: MSG_CODEPAGE added for better localization support
+	             
+
+2005-11-22	1.6 - beta
+
+	        New Features
+	        Graphic report 
+	        new language (English,Russian,Italian,Hungarian,Portuguese - Brazil,Bulgarian,Spanish)
+	        you can select how represent digit 550 980 198 or 525.5 M
+	        month/year Group report
+	        Real Name & Group in user info ...
+	        new features in template engine for better look;
+	        templates now support pictures
+		new messages in language file
+		
+	        WhoUseSite	new column RealName & Connect	
+	        MonthDetail	New Column (Graph,Month,RealName)	
+	        Day_Detail	New Column (RealName,Group)	
+	        User_Detail	show Group in header, and RalName. show link Big files (if user exist in),total report also in table head	
+	        bigfiles	username now link to user detail. calculate total size for all file in table, fix long link bug.	
+	        grou_detail	totaly rewriten, now support month/year report	
+	        user_month	new report, show how many user eat traffic for all month day (monthdetail).calculate per week sum.	
+	        graph		graph report (histogram) for all user traffic and personal graph (monthdetail)).click to bar -> link to detail info
+		
+		

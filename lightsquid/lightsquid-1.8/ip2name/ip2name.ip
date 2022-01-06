@@ -1,0 +1,19 @@
+#contributor: esl
+#do nothing
+#always return IP
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+  # $Lhost,$user,$Ltimestamp
+  my $Lhost=shift;
+  return $Lhost;
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!
+1;
+

@@ -1,0 +1,64 @@
+#Version   : 1.7
+#Translator: Sergey Erokhin, Vladislav Naumov (bugfix, rewrite) ;-)
+#Date      : 23 Jun 2005, last update 05 sep 2006
+#Lang      : russian - koi8-r
+MSG_CODEPAGE=koi8-r
+MSG_HEADER=Отчёт по использованию интернета, прокси-сервер Squid.
+MSG_ACCESSED_SITE=Посещённые сайты
+MSG_AVERAGE=В среднем
+MSG_BIG_FILE_DOWNLOAD_REPORT=Отчёт о БОЛЬШИХ скачаных файлах
+MSG_BIG_FILES=Кто скачал БОЛЬШИЕ файлы
+MSG_BIG_FILES_USER=Пользователь качал БОЛЬШИЕ файлы
+MSG_BYTES=Байт
+MSG_CONNECT=Соединений
+MSG_CUMULATIVE=Итого
+MSG_DATE=Дата
+MSG_GROUP=Группа
+MSG_GRP=груп.
+MSG_HIT%=Cache Hit %
+MSG_MONTH=МЕСЯЦ
+MSG_NUM=©
+MSG_NOT_IN_GROUP=вне группы
+MSG_OVERSIZE=Превысили
+MSG_OVERSIZE_HEAD=Пользователи, превысившие квоту
+MSG_OVERSIZE_TAIL=байт
+MSG_REPORT=(отчёт)
+MSG_SIZE=Скачано
+MSG_TIME=Время
+MSG_TOP_SITES=Популярные сайты
+MSG_TOTAL=Всего
+MSG_TOTAL_AVERAGE=Всего/В среднем
+MSG_TIME_REPORT=Время
+MSG_TIME_LINK=[T]
+MSG_URL=URL
+MSG_USER=Пользователь
+MSG_USER_WHO_USE_SITE=Пользователи, посещавшие сайт
+MSG_UPDATE=Обновлено
+MSG_USERS=Пользователей 
+MSG_WHO=ну и Кто
+MSG_WHOLE=целиком
+MSG_WORK_PERIOD=Отчётный период
+MSG_YEAR=ГОД
+MSG_WARNING=Внимание!!!
+MSG_RECOMENDATION=я рекомендую установить
+MSG_DAYLIST=Когда
+MSG_GRAPH_LINK=[G]
+MSG_GRAPH_REPORT=График
+MSG_PUTPOST=PutPost
+MSG_REALNAME=Ф.И.О
+MSG_USER_MONTH=[M]
+MSG_WEEKSUM=За неделю
+MSG_CALENDAR=Календарь
+#
+MSG_MONTH01=Янв
+MSG_MONTH02=Фев
+MSG_MONTH03=Мар
+MSG_MONTH04=Апр
+MSG_MONTH05=Май
+MSG_MONTH06=Июн
+MSG_MONTH07=Июл
+MSG_MONTH08=Авг
+MSG_MONTH09=Сен
+MSG_MONTH10=Окт
+MSG_MONTH11=Ноя
+MSG_MONTH12=Дек

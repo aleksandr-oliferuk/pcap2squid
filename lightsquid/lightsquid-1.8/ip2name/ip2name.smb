@@ -1,0 +1,37 @@
+#contributor: esl
+#resolve hostname use windows pc name, cache it for speedup
+#tested on samba Version 3.0.20-0.110.2asp
+#wait from nmblookup string in format
+#        MAIN            <00> -         M <ACTIVE>
+#if no name found, return IP
+
+use Socket;
+
+sub StartIp2Name() {
+}
+
+sub Ip2Name($$$) {
+  my $ip=shift;
+  if (!defined $hIP{$ip}) {
+  
+    my $smb=`nmblookup -A $ip`;
+    if ($smb=~m/\s+(\S+)\s+\<00\> -\s+\S\s\<ACTIVE\>/s) {
+       $user=$1;
+    } else {
+       $user=$ip;
+    }
+    
+    # if gethostbyaddr failed to get host, use ip
+    $user=$ip unless (defined $user);
+
+    $hIP{$ip}=$user;
+  }
+  return $hIP{$ip};
+}
+
+sub StopIp2Name() {
+}
+
+#warning !!!!
+1;
+

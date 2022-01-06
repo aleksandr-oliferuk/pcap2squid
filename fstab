@@ -1,0 +1,3 @@
+# For host server
+tmpfs   $PROJ_PATH/dump   tmpfs   rw,size=500M    0       0
+tmpfs   $PROJ_PATH/log   tmpfs   rw,size=5G        0       0

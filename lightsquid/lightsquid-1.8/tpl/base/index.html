@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- LightSquid TPL v1.7 -->
+
+<HTML>
+<HEAD>
+  <META name="robots" content="noindex,nofollow">
+  <META name="generator" content="LightSquid - http://lightsquid.sf.net">
+  <META http-equiv="Content-Type" content="text/html; charset=##MSG_CODEPAGE##">
+  ##META##
+  <TITLE>LightSquid :: Index</TITLE>
+</HEAD>
+
+<BODY background="" bgcolor="white" text="black">
+  <CENTER>
+    <TABLE cellpadding="0" cellspacing="0">
+      <TBODY>
+        <TR>
+          <TH align="center"><a href="index.cgi">##MSG_HEADER##</a></TH>
+        </TR>
+
+        <TR>
+          <TH align="center"><B><FONT color="#0033FF">##MSG_WORK_PERIOD##:</FONT> <FONT color="#FF0000">##WORKPERIOD##</FONT></B></TH>
+        </TR>
+      </TBODY>
+    </TABLE>
+  </CENTER><BR>
+
+  <CENTER>
+    <TABLE width="100%">
+      <TR>
+        <TD width="33%"></TD>
+
+        <TD width="33%">
+          <CENTER>
+            <TABLE align="center" bgcolor="#000000" border="0" bordercolor="#FFFFFF" cellpadding="1" cellspacing="1">
+              <TBODY>
+                <TR bgcolor="beige">
+                  <TD colspan="12" align="center">##MSG_CALENDAR##</TD>
+                </TR>
+
+		<!-- VARIABLE yearselected bgcolor="#FFD700" -->
+                <TR bgcolor="beige">
+                  <!-- [[ year start-->
+                  <TD colspan="##YEARCOLSPAN##" ##YEARSELECTED##>
+                    <DIV align="center">
+			<a href="##YEARURL_L##">##YEARURL_B##</a><br>
+                    </DIV>
+                  </TD>
+		  <!-- ]] year end-->
+                </TR>
+		
+		<!-- VARIABLE monthselected bgcolor="#FFD700" -->
+                <TR bgcolor="beige">
+                  <!-- [[ month start-->
+                  <TD ##MONTHSELECTED##><a href="##MONTHURL_L##">##MONTHURL_B##</a></TD>
+		  <!-- ]] month end-->
+                </TR>
+              </TBODY>
+            </TABLE>
+          </CENTER>
+        </TD>
+
+        <TD>
+          <TABLE align="center" bgcolor="#000000" border="0" bordercolor="#FFFFFF" cellpadding="1" cellspacing="1">
+            <TBODY>
+              <TR bgcolor="beige" align="center">
+                <TD>##MSG_TOP_SITES##</TD>
+                <TD>##MSG_TOTAL##</TD>
+                <TD>##MSG_GROUP##</TD>
+              </TR>
+
+              <TR bgcolor="beige" align="center">
+                <TD><A HREF="##TOP_YEAR_L##">##TOP_YEAR_B##</A></TD>
+                <TD><A HREF="##TOTAL_YEAR_L##">##TOTAL_YEAR_B##</A></TD>
+                <TD><A HREF="##GROUP_YEAR_L##">##GROUP_YEAR_B##</A></TD>
+              </TR>
+
+              <TR bgcolor="beige" align="center">
+                <!-- HIDE monthtop start -->
+                <TD><A HREF="##TOP_MONTH_L##">##TOP_MONTH_B##</A></TD>
+                <TD>
+		    <A HREF="##TOTAL_MONTH_L##">##TOTAL_MONTH_B##</A> 
+                    <!-- HIDE graph start -->
+		    <A HREF="##MONTH_GRAPH_L##"><img src="get.cgi?png=graph" border="0" title="Graph Report"></A>
+		    <!-- HIDE graph end -->
+		</TD>
+                <TD><A HREF="##GROUP_MONTH_L##">##GROUP_MONTH_B##</TD>
+		<!-- HIDE monthtop end -->
+              </TR>
+            </TBODY>
+          </TABLE>
+        </TD>
+
+        <TD></TD>
+      </TR>
+    </TABLE>
+  </CENTER>
+  <HR>
+
+  <CENTER>
+    <TABLE cellpadding="1" cellspacing="2">
+      <TBODY>
+        <TR>
+          <TD></TD>
+
+          <TD></TD>
+        </TR>
+
+        <TR bgcolor="blanchedalmond">
+          <TH><FONT color="darkblue" size="-1">##MSG_DATE##</FONT></TH>
+	  <!-- HIDE group start -->
+          <TH><FONT color="darkblue" size="-1">##MSG_GROUP##</FONT></TH>
+	  <!-- HIDE group end -->
+          <TH><FONT color="darkblue" size="-1">##MSG_USERS##</FONT></TH>
+	  <!-- HIDE oversize start -->
+          <TH><FONT color="darkblue" size="-1">##MSG_OVERSIZE##</FONT></TH>
+	  <!-- HIDE oversize end -->
+          <TH><FONT color="darkblue" size="-1">##MSG_BYTES##</FONT></TH>
+          <TH><FONT color="darkblue" size="-1">##MSG_AVERAGE##</FONT></TH>
+          <TH><FONT color="darkblue" size="-1">##MSG_HIT%##</FONT></TH>
+        </TR>
+	
+	<!-- VARIABLE oddattr bgcolor="beige" -->
+        <!-- VARIABLE evenattr  bgcolor="cornsilk" -->
+        <!-- VARIABLE sundayattr bgcolor="bisque" -->
+        <!-- VARIABLE saturdayattr bgcolor="#F0EFC7" -->
+        
+	<!-- [[ day start-->
+        <TR ##DAYATTR##>
+          <TD align="center"><FONT size="-1"><A HREF="##DAYDATE_L##">##DAYDATE_B##</A></FONT></TD>
+	  <!-- HIDE group start -->
+          <TD align="center"><FONT size="-1"><A HREF="##DAYGROUP_L##">##DAYGROUP_B##</A></FONT></TD>
+	  <!-- HIDE group end -->
+          <TD align="center"><FONT size="-1">##DAYUSERS##</FONT></TD>
+	  
+	  <!-- HIDE oversize start-->
+          <TD align="center"><FONT size="-1"><A HREF="##DAYOVERUSERS_L##">##DAYOVERUSERS_B##</A></FONT></TD>
+	  <!-- HIDE oversize end-->
+          <TD align="right" nowrap="true"><FONT size="-1">##DAYBYTES##</FONT></TD>
+          <TD align="right"><FONT size="-1">##DAYAVERAGE##</FONT></TD>
+          <TD align="right"><FONT size="-1">##DAYCACHEHIT##%</FONT></TD>
+        </TR>
+	<!-- ]] day end-->
+
+        <TR bgcolor="blanchedalmond">
+          <TD align="left">##MSG_TOTAL_AVERAGE##:</TD>
+	  <!-- HIDE group start -->
+          <TD>&nbsp</TD>
+	  <!-- HIDE group end -->
+          <TD align="center">##USERAVERAGE##</TD>
+	  <!-- HIDE oversize start-->
+          <TD align="center">##OVERUSERAVERAGE##</TD>
+	  <!-- HIDE oversize end -->
+          <TD align="right"><FONT size="-1"><A HREF="##TOTAL_L##">##TOTAL_B##</A></FONT></TD>
+          <TD align="right">##TOTALAVERAGE##</TD>
+          <TD align="right">##AVERAGEHIT##%</TD>
+        </TR>
+      </TBODY>
+    </TABLE>
+    <HR>
+    ##COPYRIGHT##
+  </CENTER>
+</BODY>
+</HTML>
