@@ -6,6 +6,8 @@ Recieve raw network trafic dump in [pcap-format](https://en.wikipedia.org/wiki/P
 
 This implementation get traffic from [mikrotik sniffer](https://wiki.mikrotik.com/wiki/Manual:Tools/Packet_Sniffer) on udp port 37008 and parse it with [trafr](http://www.mikrotik.com/download/trafr.tgz) program. You could rebuild parser image without it and recieve trafic just with tcpdump.
 
+With this tool you will get statistics, which sites and when watch users of your LAN. But it doesnt give you actual trafic amount.
+
 ## Usage
 
 Clone this project, complete [.env](.env) with your values, then run it with `docker-compose up -d`
