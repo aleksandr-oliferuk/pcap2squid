@@ -1,7 +1,5 @@
 FROM python:2.7.18-slim-buster
 
-ENV TZ=Europe/Moscow
-
 COPY ./requirements.txt /tmp/requirements.txt
 
 RUN apt update
