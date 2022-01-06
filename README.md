@@ -21,7 +21,7 @@ After that you should setup your [cron](https://en.wikipedia.org/wiki/Cron) on h
 
 Report will appear at `http://$LIGHTSQUID_ADDR:$LIGHTSQUID_LISTEN_PORT`
 
-## Enviroment example
+## Environment example
 
 ```
 # Path, where you download this project
