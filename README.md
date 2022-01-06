@@ -36,3 +36,5 @@ The best way to use ramdisk for all processed files. E.g. of fstab:
 tmpfs   $PROJ_PATH/dump   tmpfs   rw,size=500M    0       0
 tmpfs   $PROJ_PATH/log   tmpfs   rw,size=5G        0       0
 ```
+
+To change language of lightsquid report just change `$lang` parameter in [lightsquid.cfg](./lightsquid/lightsquid-1.8/lightsquid.cfg) and rebuild lightsquid image.
