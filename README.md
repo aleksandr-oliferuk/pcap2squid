@@ -13,7 +13,7 @@ Clone this project, complete [.env](.env) with your values, then run it with `do
 After that you shoul setup your [cron](https://en.wikipedia.org/wiki/Cron) on host machine with something like this:
 
 ```
-*/5 * * * * docker exec lightsquid_app_1 ./lightparser.pl today 2>> $PROJ_PATH/errors.log
+*/5 * * * * docker exec pcap2squid_lightsquid_1 ./lightparser.pl today 2>> $PROJ_PATH/errors.log
 0 4 * * * rm -f $PROJ_PATH/log/access.log
 ```
 
