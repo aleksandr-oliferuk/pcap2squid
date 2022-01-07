@@ -24,8 +24,6 @@ services:
       - $PROJ_PATH/log/:/var/parser/log/
     ports:
       - 37008:37008/udp
-    depends_on:
-      - lightsquid
     networks:
       parser_network:
     restart: always
