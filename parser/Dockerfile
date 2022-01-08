@@ -22,4 +22,4 @@ WORKDIR /var/parser
 RUN chmod +x pcap_to_squid.py
 RUN chmod +x trafr
 
-CMD timeout 10 ./trafr -s | tcpdump -r - -n "(port 80 or 443)" -w dump/dump.pcap -s0 && ./pcap_to_squid.py >> $PROJ_PATH/log/access.log && rm -f $PROJ_PATH/dump/dump.pcap && exit 0
+CMD timeout 10 ./trafr -s | tcpdump -r - -n "(port 80 or 443)" -w dump/dump.pcap -s0 && ./pcap_to_squid.py >> log/access.log && rm -f dump/dump.pcap && exit 0
