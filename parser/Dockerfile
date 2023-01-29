@@ -2,15 +2,15 @@ FROM python:2.7.18-slim-buster
 
 COPY ./requirements.txt /tmp/requirements.txt
 
-RUN apt update
-RUN apt -y upgrade
-RUN apt -y install gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev libc6-i386 tcpdump
-RUN python -m pip install --upgrade pip
-RUN pip install -r /tmp/requirements.txt
-RUN rm -f /tmp/requirements.txt
-RUN apt -y remove gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev
-RUN apt -y autoremove
-RUN apt-get -y clean
+RUN apt update ;\
+    apt -y upgrade ;\
+    apt -y install gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev libc6-i386 tcpdump ;\
+    python -m pip install --upgrade pip ;\
+    pip install -r /tmp/requirements.txt ;\
+    rm -f /tmp/requirements.txt ;\
+    apt -y remove gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev ;\
+    apt -y autoremove ;\
+    apt-get -y clean
 RUN mkdir -p /var/parser/dump
 RUN mkdir -p /var/parser/log
 
