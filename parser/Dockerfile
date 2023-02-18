@@ -7,7 +7,6 @@ RUN apt update ;\
     apt -y install gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev libc6-i386 tcpdump ;\
     python -m pip install --upgrade pip ;\
     pip install -r /tmp/requirements.txt ;\
-    rm -f /tmp/requirements.txt ;\
     apt -y remove gcc libssl-dev pkg-config libcairo2-dev build-essential libffi-dev python2-dev libgirepository1.0-dev ;\
     apt -y autoremove ;\
     apt-get -y clean
