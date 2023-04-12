@@ -44,3 +44,10 @@ tmpfs   $PROJ_PATH/log   tmpfs   rw,size=5G        0       0
 To change language of lightsquid report just change `$lang` parameter in [lightsquid.cfg](./lightsquid/lightsquid-1.8/lightsquid.cfg) and rebuild [lightsquid](./lightsquid/Dockerfile) image.
 
 If you are using [phpIPAM](https://phpipam.net/), you could use my [script](get-names.py) to complete lightsquid report with real names of ip-addrs owners (realname.cfg).
+
+## Screenshots
+
+![Daily report](/screenshots/daily_report.jpg?raw=true "Daily report")
+![Popular sites](/screenshots/popular_sites.jpg?raw=true "Daily Report")
+![User report](/screenshots/user_report.jpg?raw=true "User report")
+![Visited sites](/screenshots/visited_sites.jpg?raw=true "Visited sites")
